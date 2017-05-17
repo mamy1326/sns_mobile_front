@@ -1,0 +1,9 @@
+# アクセス制限(全て許可)
+order allow,deny
+allow from all
+
+# .htaccessファイルを隠す
+AddHandler cgi-script htaccess
+
+# xhtmlを許可する(docomo用。これを記述しないとstyleが使えない)
+AddType application/xhtml+xml .html
